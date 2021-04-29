@@ -1,0 +1,106 @@
+body{
+    background:black;
+    color: white;
+    margin: auto;
+}
+header{
+    background:black;
+    color: white;
+}
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+nav{
+    font-weight: bold;
+    width: 100%;
+    font-size: 14pt;
+    height: 50px;
+    background:white;
+    color:rgb(8, 183, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav> {
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+ul, ol{
+    list-style: none;
+}
+nav> ul li {
+    float: left;
+}
+nav a{
+    
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 20px;
+    transition: ease 1s;
+    display: block;
+}
+nav a:hover{
+background: cyan;
+color: black;
+}
+nav li ul{
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li ul li{
+    position: relative;
+}
+article{
+    text-align: left;
+    width: 80%;
+    padding: 0px 100px;
+}
+h2 {
+    font-size: 20pt;
+    text-align: center;
+    color:white;
+
+}
+section{
+    font-size: 16pt;
+    width: 70%;
+    color:cyan;
+    float: left;
+}
+h3 {
+    text-align: center;
+    font-size: 9pt;
+}
+h4 {
+    text-align: center;    
+}
+aside{
+    font-size: 14pt;
+    width: 30%;
+    color:cyan;
+    float: left;
+    
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    font-size: 14pt;
+    text-align: center;
+    bottom: 0;
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
